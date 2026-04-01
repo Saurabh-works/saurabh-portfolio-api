@@ -49,6 +49,10 @@ app.use(
   })
 );
 
+app.get('/', (req, res) => {
+  res.json({ message: 'Portfolio API is running' });
+});
+
 app.get('/api/health', (req, res) => {
   res.json({ status: 'ok' });
 });
